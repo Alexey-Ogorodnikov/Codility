@@ -2,7 +2,7 @@ fun main() {
     println("main")
 
     val binaryGap = BinaryGap()
-    binaryGap.solution(12)
+    binaryGap.solution( 32 )
 
 
 

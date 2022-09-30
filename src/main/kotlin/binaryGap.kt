@@ -3,11 +3,11 @@
 class BinaryGap {
 
     /*
-
         BinaryGap
         START
         Find longest sequence of zeros in binary representation of an integer.
 
+        753 = 1000000000000000001
 
         A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
@@ -27,8 +27,26 @@ class BinaryGap {
     */
 
     fun solution(N: Int): Int {
-        println("BinaryGap")
-        return 0
+        println("BinaryGap GO!")
+        val binary = Integer.toBinaryString(N);
+        println("$binary")
+
+        val delimiter = "1"
+        var list = binary.split(delimiter)
+        println(list)
+
+        //here we erase the edges for example 0011000011 = 00,0000,, => 0000,
+        list = list.subList(0, list.size - 1)
+
+
+        val longest = list.maxBy { it.length }
+        println(longest)
+
+        return if (N == 0) {
+            0
+        } else {
+            1
+        }
     }
 
 }
