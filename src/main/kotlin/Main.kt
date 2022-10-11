@@ -1,4 +1,4 @@
-
+import kotlin.random.Random
 
 fun main() {
     println("start")
@@ -11,5 +11,13 @@ fun main() {
 
     val oddOccurrencesInArray = OddOccurrencesInArray()
     oddOccurrencesInArray.solution( intArrayOf(9, 3, 9, 3, 9, 7, 9) )
+
+
+    val frogJump = FrogJump()
+    frogJump.solution( 10, 85, 30 )
+    frogJump.solution( 1, 5, 2 )
+    frogJump.solution(5, 1000000000, 2)
+    frogJump.solution( Random.nextInt(1,1000000000), Random.nextInt(1,1000000000), Random.nextInt(1,1000000000) )
+
 
 }
