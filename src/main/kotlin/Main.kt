@@ -19,5 +19,9 @@ fun main() {
     frogJump.solution(5, 1000000000, 2)
     frogJump.solution( Random.nextInt(1,1000000000), Random.nextInt(1,1000000000), Random.nextInt(1,1000000000) )
 
+    val missingElement = MissingElement()
+    missingElement.solution(intArrayOf(2,3,4,5,6,8))
 
+    val tapeEquilibrium = TapeEquilibrium()
+    tapeEquilibrium.solution(intArrayOf(3,1,2,4,3))
 }
